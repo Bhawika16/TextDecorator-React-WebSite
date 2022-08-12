@@ -1,0 +1,235 @@
+body {
+  color: white;
+  font-style: bold;
+  background-color: rgb(27, 27, 235);
+  height: 100%;
+  background-attachment: fixed;
+}
+
+header::before {
+  background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+  content: "";
+  filter: blur(5px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+:root {
+  --navbar-height: 65px;
+}
+
+#navbar {
+  display: flex;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#logo img {
+  width: 70px;
+  height: 70px;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: auto;
+  width: 62%;
+}
+
+#navbar ul li {
+
+  padding: 30px;
+  margin: 2px;
+}
+
+#navbar:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background-color: white;
+  height: var(--navbar-height);
+}
+
+#imagecss {
+  height: 150px;
+  width: 200px;
+  position: 100px;
+  position: absolute;
+  right: 22px;
+  top: 50px;
+  flex-wrap: wrap;
+}
+
+.left {
+  display: inline-block;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+#navbar li a {
+  text-decoration: none;
+  color: black;
+
+
+}
+
+#navbar li a:hover {
+  text-decoration: underline;
+  color: grey
+}
+
+.mid {
+  display: block;
+  margin: 0px auto;
+  width: 33%;
+  top: 20px;
+}
+
+.right {
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+#logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 20px;
+  margin: -8px;
+}
+
+.btn {
+  margin: 2px;
+  border: white;
+  padding: 3px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: blue;
+  background-color: cornsilk
+}
+
+.container {
+  border: 2px solid white;
+  border-radius: 2px;
+  margin: 123px 13px;
+  padding: 20px;
+  width: 203px
+}
+
+.form-group {
+  padding: 2px;
+  margin: 10px;
+  text-align: center;
+  display: block;
+  width: 30px;
+
+}
+
+.container h1 {
+  text-align: center;
+
+}
+
+.container button {
+  color: aqua;
+}
+
+.box {
+  width: 332px;
+  height: 281px;
+  border: 2px solid black;
+  display: inline;
+  margin: 10px;
+  padding: 10px;
+  position: absolute;
+}
+
+#box1 {
+  background-color: aqua;
+  position: absolute;
+  top: 150px;
+  left: 322px;
+  background-image: url(img/food.jpeg);
+  border-radius: 30px;
+  box-shadow: 10px 10px 46px aquamarine, 10px 10px 46px pink;
+  ANIMATION-NAME: ani;
+  animation-duration: 3s;
+  animation-iteration-count: 2;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes ani {
+  from {
+    width: 0px;
+  }
+
+  to {
+    width: 332px;
+  }
+}
+
+#box2 {
+  background-color: brown;
+  position: absolute;
+  position: absolute;
+  top: 150px;
+  left: 815px;
+  background-image: url('img/rooms.jfif');
+  border-radius: 30px;
+  box-shadow: 10px 10px 46px aquamarine, 10px 10px 46px pink;
+  ANIMATION-NAME: ani;
+  animation-duration: 3s;
+  animation-iteration-count: 2;
+  animation-iteration-count: infinite;
+}
+
+#box {
+  border: 2px solid red;
+  align-items: center;
+  background-color: bisque;
+  position: absolute;
+  top: 554px;
+  left: 349px;
+  width: 790px;
+  height: 150px;
+  border-radius: 60px;
+  transition-property: background-color;
+  transition-duration: 3s;
+  padding: 20px;
+  margin: 2px;
+  align-items: center;
+  text-align: center;
+
+
+}
+
+#box:hover {
+  background-color: greenyellow;
+  transform: scale(1.2);
+
+}
+
+#item {
+  display: flex;
+}
